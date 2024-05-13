@@ -1,11 +1,9 @@
 {
     "_version": "1.1.0",
-	
-	"start_url": "<startUrl>",
-	
+    "start_url": "<startUrl>",
     "sap.app": {
         "_version": "1.1.0",
-        "id": "sap.ui.demo.walkthrough",
+        "id": "sap.ui.sap-ui5",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
@@ -15,7 +13,8 @@
         "description": "{{appDescription}}",
         "tags": {
             "keywords": [
-                "{{<keyword1>}}", "{{<keyword2>}}"
+                "{{<keyword1>}}",
+                "{{<keyword2>}}"
             ]
         },
         "dataSources": {
@@ -29,6 +28,7 @@
         }
     },
     "sap.ui": {
+        "technology": "UI5",
         "_version": "1.1.0",
         "icons": {
             "icon": "<icon>",
@@ -67,14 +67,15 @@
             "libs": {
                 "sap.m": {}
             }
-            
         },
         "models": {
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "sap.ui.demo.walkthrough.i18n.i18n",
-                    "supportedLocales": [""],
+                    "bundleName": "sap.ui.sap-ui5.i18n.i18n",
+                    "supportedLocales": [
+                        ""
+                    ],
                     "fallbackLocale": ""
                 },
                 "uri": "<uriRelativeToManifest>"
@@ -88,20 +89,18 @@
             }
         },
         "rootView": {
-            "viewName": "sap.ui.demo.walkthrough.view.App",
+            "viewName": "sap.ui.sap-ui5.view.App",
             "type": "XML",
             "async": true,
             "id": "app"
         },
         "handleValidation": false,
-        "config": {
-          
-        },
+        "config": {},
         "routing": {
             "config": {
                 "routerClass": "sap.m.routing.Router",
                 "viewType": "XML",
-                "viewPath": "sap.ui.demo.walkthrough.view",
+                "viewPath": "sap.ui.sap-ui5.view",
                 "controlId": "app",
                 "controlAggregation": "pages",
                 "async": true
@@ -127,21 +126,18 @@
                     "viewId": "detail",
                     "viewName": "Detail"
                 }
-
             }
-          
         },
         "extends": {
-            "component" : "<extendedComponentId>",
-			"minVersion": "<minComp1Version>",
-			"extensions": {}
+            "component": "<extendedComponentId>",
+            "minVersion": "<minComp1Version>",
+            "extensions": {}
         },
         "contentDensities": {
             "compact": true,
             "cozy": true
         }
     },
-
     "sap.platform.abap": {
         "_version": "1.1.0",
         "uri": "<uri>"

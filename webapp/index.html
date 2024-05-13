@@ -10,13 +10,15 @@
         data-sap-ui-libs="sap.m"
         data-sap-ui-compatVersion="edge"
         data-sap-ui-async="true"
-        data-sap-ui-oninit="module:sap/ui/sap-ui5/index"
+        data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
         data-sap-ui-resourceroots='{
             "sap.ui.sap-ui5": "./"
         }'> </script>
         
     </head>
     <body class="sapUiBody" id="content">
+
+        <div data-sap-ui-Component data-name="sap.ui.sap-ui5" data-id="container" data-settings='{"id":"sap-ui5"}'></div>
         
     </body>
 </html>
